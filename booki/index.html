@@ -27,7 +27,7 @@
 <body>
     <div class="main-container">
 
-        <!-- HEADER -->
+        <!-- BEGIN OF HEADER -->
         <header class="header">
 <img class="logo" src="images/logo/Booki.png" alt="logo du site">
 
@@ -43,45 +43,59 @@
 
         <main>
         
-            <section> <!--BEGIN OF THE RESEARCH SECTION   -->
+            <section class="search_filtre"> <!--BEGIN OF THE RESEARCH AND FILTER SECTION   -->
             
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             
             
-                <form class="formulaire" action=""> <!-- form for search an hotel according to filters-->
+
+                <form class="formulaire" action=""> <!-- Begin of the research zone-->
             
                     <i id="iconGPS" class="fa-sharp fa-solid fa-location-dot"></i>
                     <input class="text_research" type="text" value="Marseille, France">
-                   <!-- one button for desktop version and one button for mobile version-->
+                   <!-- one button for desktop version and one button for mobile version (responsive)-->
                     <button class="button_research_text" name="button_research" type="submit">Rechercher</button>
                     <button class="button_research_icon" name="button_research" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                       
-                      
+                </form>                             <!-- End of the research zone-->
             
-                </form>
+
+
+
+
+                <div class="div_filter">            <!-- Begin of filter zone-->
+                    <h2 id="filter_title">Filtres</h2>
+                
+                    <div class="buttons_filter"> <!-- div that let the display's menagement of the buttons according size screen  -->
+                        <button class="button"> <i class="fa-solid fa-money-bill-wave"></i>Économique</button>
+                        <button class="button"> <i class="fa-solid fa-person"></i> Familial</button>
+                        <button class="button"> <i class="fa-solid fa-heart"></i> Romantique</button>
+                        <button class="button"> <i class="fa-solid fa-fire"></i> Nos pépites</button>
+                    </div>
+                
+                </div>                                <!-- end of filter zone-->
+                
+
+
+
+                <div id="infobar">                    <!-- Begin of Infobar--> 
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>Plus de <span>500 </span>logements sont disponibles dans cette ville</p>
+                </div>                                <!-- Enf of Infobar-->
             
-                <h2 id="filter">Filtres</h2>
+
+
             
-                <div class="buttons_filter"> <!-- div that let the display's menagement of the buttons according size screen  -->
-                    <button>Economique</button>
-                    <button>Familial</button>
-                    <button>Romantique</button>
-                    <button>Nos pépites</button>
-                </div>
-            
-                <p>Plus de <span></span>logements sont disponibles dans cette ville</p>
-            
-            
-            
-            </section> <!--END OF THE RESEARCH SECTION   -->
+            </section> <!--END OF THE RESEARCH AND FILTER SECTION   -->
         
         
         
             <div class="hebergements-and-populaires">
         
-                <!-- SECTION MENAGING THE DISPLAY OFTHE CENTRAL CELL -->
+                <!-- SECTION MENAGING THE DISPLAY OF THE CENTRAL CELL -->
                 <section class="hebergements">
+                    <h2>  Hébergements à <span>Marseille</span> </h2>
                 </section> <!-- END OF THE SECTION -->
         
 
