@@ -2,6 +2,7 @@
 <html lang="fr">
 
 <!-- HEAD -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,12 +30,12 @@
 
         <!-- BEGIN OF HEADER -->
         <header class="header">
-<img class="logo" src="images/logo/Booki.png" alt="logo du site">
+            <img class="logo" src="images/logo/Booki.png" alt="logo du site">
 
-<nav>
-<a href="#">Hébergements</a>
-<a href="#">Activités</a>
-</nav>
+            <nav>
+                <a href="#">Hébergements</a>
+                <a href="#">Activités</a>
+            </nav>
         </header>
         <!-- END OF HEADER -->
 
@@ -42,40 +43,42 @@
 
 
         <main>
-        
+
             <section class="search_filtre"> <!--BEGIN OF THE RESEARCH AND FILTER SECTION   -->
-            
+
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
-            
-            
+
+
 
                 <form class="formulaire" action=""> <!-- Begin of the research zone-->
-            
+
                     <i id="iconGPS" class="fa-sharp fa-solid fa-location-dot"></i>
                     <input class="text_research" type="text" value="Marseille, France">
-                   <!-- one button for desktop version and one button for mobile version (responsive)-->
+                    <!-- one button for desktop version and one button for mobile version (responsive)-->
                     <button class="button_research_text" name="button_research" type="submit">Rechercher</button>
-                    <button class="button_research_icon" name="button_research" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                      
-                </form>                             <!-- End of the research zone-->
-            
+                    <button class="button_research_icon" name="button_research" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+
+                </form> <!-- End of the research zone-->
 
 
 
 
-                <div class="div_filter">            <!-- Begin of filter zone-->
+
+                <div class="div_filter"> <!-- Begin of filter zone-->
                     <h2 id="filter_title">Filtres</h2>
-                
-                    <div class="buttons_filter"> <!-- div that let the display's menagement of the buttons according size screen  -->
+
+                    <div class="buttons_filter">
+                        <!-- div that let the display's menagement of the buttons according size screen  -->
                         <button class="button"> <i class="fa-solid fa-money-bill-wave"></i>Économique</button>
                         <button class="button"> <i class="fa-solid fa-person"></i> Familial</button>
                         <button class="button"> <i class="fa-solid fa-heart"></i> Romantique</button>
                         <button class="button"> <i class="fa-solid fa-fire"></i> Nos pépites</button>
                     </div>
-                
-                </div>                                <!-- end of filter zone-->
-                
+
+                </div> <!-- end of filter zone-->
+
 
 
 
@@ -85,57 +88,151 @@
                 </div> <!-- Enf of Infobar-->
 
 
-            
+
             </section> <!--END OF THE RESEARCH AND FILTER SECTION   -->
-        
-        
-        
-            <div class="hebergements-and-populaires">  <!-- DIV MENAGING THE DISPLAY OF THE CENTRAL CELL -->
-        
-               
+
+
+
+
+
+
+
+
+
+            <div class="hebergements-and-populaires"> <!-- DIV MENAGING THE DISPLAY OF THE CENTRAL CELL -->
+
+
                 <section class="hebergements"> <!-- OPENING OF THE SECTION HEBERGEMENTS -->
-                    <h2>  Hébergements à <span>Marseille</span> </h2>
+                    <h2 class="section-title"> Hébergements à Marseille </h2>
 
-                <div>
-                <a href="#"><img src="images/hebergements/fred-kleber.jpg" alt="Photo d'une chambre à l'hôtel du port"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+                    <div class="resultats_herbergements"> <!-- div that let menagning the flexbox -->
 
 
 
-                </div>
+                        <!-- first card -->
+                        <a href="#">
+                            <article class="card_herbergement">
+                                <img src="images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                        
+                                <div class="card-content">
+                                    <div class="card-txt">      <!-- Text of the card -->
+                                        <h3 class="card-title"> Hôtel du port</h3>
+                                        <p class="card-subtitle">Nuit à partir de 52 <span class="euro">€</span> </p>
+                                    </div>
+                        
+                            
+                                    <div class="card-rating">    <!-- Rating of the card -->
+                        
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                        
+                        
+                        
+                        
+                        
+                                </div>
+                            </article>
+                        </a>
+                        
+                        <!-- second card -->
+                        
+                        <a href="#">
+                            <article class="card_herbergement">
+                                <img src="images/hebergements/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                        
+                                <div class="card-content">
+                                    <div class="card-txt">      <!-- Text of the card -->
+                                        <h3 class="card-title"> Hôtel chez Amina</h3>
+                                        <p class="card-subtitle">Nuit à partir de 96 <span class="euro">€</span> </p>
+                                    </div>
+                        
+                            
+                                    <div class="card-rating">    <!-- Rating of the card -->
+                        
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                        
+                                </div>
+                            </article>
+                        </a>
 
-                </section>                      <!-- END OF THE SECTION -->
-        
+                         <!-- Third card -->
+
+                        <a href="#">    
+                            <article class="card_herbergement">
+                                <img src="images/hebergements/reisetopia.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                        
+                                <div class="card-content">
+                                    <div class="card-txt">      <!-- Text of the card -->
+                                        <h3 class="card-title"> Hôtel les Mouettes</h3>
+                                        <p class="card-subtitle">Nuit à partir de 76 <span class="euro">€</span> </p>
+                                    </div>
+                        
+                            
+                                    <div class="card-rating">    <!-- Rating of the card -->
+                        
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                        
+                                </div>
+                            </article>
+                        </a>
+
+
+                        
+
+
+                    </div> <!-- end of div that let menagning the flexbox -->
+
+
+
+                </section> <!-- END OF THE SECTION -->
+
+
+
+
+
 
                 <!-- OPENING OF SECTION MENAGNING DISPLAY OF RHE RIGHT COLUMN-->
                 <section class="populaires">
-        
+
                     <div class="populaires-title">
-        
+
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
-        
+
                     <!-- selection of popular hotels -->
                     <div class="populaires-cards">
-        
+
                         <!-- first link to an hotel -->
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/emile-guillemot.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
-        
+
                                 <!-- Menagning of the text beside image -->
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Le soleil du matin</h3>
                                         <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
                                     </div>
-        
+
                                     <!-- menaging the stars under text-->
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -145,26 +242,26 @@
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
-        
+
                                 </div>
-        
+
                             </article>
                         </a>
-        
+
                         <!-- Second link to an hotel -->
                         <a href="#">
                             <article class="card">
-        
+
                                 <img src="./images/hebergements/aw-creative.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
-        
+
                                     <!-- Menagning of the text beside image -->
                                     <div class="card-txt">
                                         <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
                                         <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
                                     </div>
-        
+
                                     <!-- menaging the stars under text-->
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -174,24 +271,24 @@
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
-        
+
                                 </div>
                             </article>
                         </a>
-        
+
                         <!-- Second link to an hotel -->
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/febrian-zakaria2.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
-        
+
                                     <!-- Menagning of the text beside image -->
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Bleu et Blanc</h3>
                                         <p class="card-subtitle">Nuit à partir de 68<span class="euro">€</span></p>
                                     </div>
-        
+
                                     <!-- menaging the stars under text-->
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -207,15 +304,15 @@
                     </div>
                 </section>
                 <!-- END OF SECTION -->
-        
-        
+
+
             </div>
         </main>
 
         <!-- OPENING OF FOOTER -->
         <footer></footer>
         <!-- END OF FOOTER -->
-        
+
     </div>
 </body>
 
