@@ -1,10 +1,11 @@
 
 @import url("research_and_filter_section.css");
 @import url("hebergements_populaires.css");
+@import url("activites.css");
 
 
 
-/****** General ***********/
+/****** General **************************************************************/
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -66,11 +67,20 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+/*********************************************************************/
 
 
 
 
-/****** Begin of Header *******************************************************/
+
+
+
+
+
+
+
+
+/****** Header *******************************************************/
 .header {
 
     display: flex;
@@ -96,40 +106,60 @@ header nav {
     display: flex;
     gap: 4em;
 }
-/****** End of Header *******************************************************/
+/*********************************************************************/
 
 
 
-/****** Section activites******/
 
 
-.activites img {
-    border-radius: 20px 20px 0px 0px;
-    width: 100%;
-    height: 380px;
-}
 
-.activites .card {
-    width: 300px;
-    padding: 0px;
-}
 
-.activites .card-title {
-padding: 0px 0px 20px 15px;
-}
 
-.resultats_activites {
+
+
+
+
+/****** Footer *******************************************************/
+
+
+footer {
+    background-color: #F2F2F2;
+    margin-bottom: 0px;
+    min-height: 150px;
+    margin-top: 50px;
     display: flex;
-    gap: 30px;
-    margin-left: 20px;
-    margin-top:30px;
+    gap: 230px;
 }
 
-.activites .lieu_activites {
-margin-top: 60px;
-padding-left: 15px;
-font-size: 22px;
+.div_inside_footer {
+    padding-left: 20px;
 }
+
+.titles_in_footer {
+    margin-bottom: -15px;
+}
+
+.ul_div_footer {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ul_div_footer li {
+    padding-top: 20px;
+}
+
+/*********************************************************************/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
