@@ -96,7 +96,7 @@ header a:hover {
     top: 15px;
 }
 
-header nav {
+.nav_header{
     display: flex;
     gap: 4em;
 }
@@ -556,6 +556,65 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+
+/** research and filter section ********/
+
+
+.search_filtre {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/** research zone **/
+
+.formulaire {
+    margin-top: 10px;
+}
+
+
+/** filter zone **/
+
+.div_filter {
+    flex-direction: column;
+}
+
+#filter_title {
+ padding-top: 0px;   
+}
+
+.buttons_filter {
+    margin-top: -10px;
+}
+
+.button {
+    padding-bottom: 10px;
+}
+
+#infobar {
+    display: flex;
+    position: relative;
+    top: 50px;
+}
+
+/** hebergements-and-populaires section ********/
+
+.hebergements-and-populaires {
+    padding-top: 70px;
+}
+
+
+/** footer ********/
+
+footer {
+    gap: 9%;
+}
+
+#footer_div3 {
+    padding-left: 9%;
+}
+
 }
 
 
@@ -568,13 +627,33 @@ footer {
 @media (max-width: 768px) {
 
 
-    /* ... */
+/***** header****/
     header a:hover {
-
         border-top: none;
         border-bottom: solid 1px #0065FC;
         color: #0065FC;
     }
+
+
+    .header {
+        flex-direction: column;
+    }
+
+    .div_logo {
+        text-align: center;
+    }
+
+    .nav_header {
+        margin-top: 40Px;
+        justify-content: center;
+    }
+
+
+    header a:hover {
+        border-bottom: solid 1px #0065FC;
+        color: #0065FC;
+    }
+
 
 
     /****** Research section ***********/
@@ -601,4 +680,8 @@ footer {
     .button_research_icon i {
         color: white;
     }
+
+
+
+
 }
