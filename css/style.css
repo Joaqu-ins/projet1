@@ -82,8 +82,12 @@ a {
     margin-top: 20px;
 }
 
-header a:hover {
+.link_nav {
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+}
 
+.link_nav:hover {
     border-top: solid 1px #0065FC;
     color: #0065FC;
 }
@@ -198,7 +202,7 @@ header a:hover {
         border: solid 2px rgba(217, 217, 217, 1);
         border-radius: 25px;
         background-color: white;
-        padding: 12px 19px 30px 19px;
+        padding: 12px 19px 10px 19px;
         font-size: 17px;
         font-weight: bold;
     }
@@ -520,6 +524,7 @@ footer {
 }   
 }
 
+/*ellipse*/
 
 
 
@@ -566,13 +571,16 @@ footer {
     flex-direction: column;
 }
 
+.search_filtre h1 {
+    margin-top: 50px;
+}
+
 
 /** research zone **/
 
 .formulaire {
     margin-top: 10px;
 }
-
 
 /** filter zone **/
 
@@ -592,11 +600,14 @@ footer {
     padding-bottom: 10px;
 }
 
+/**infobar**/
+
 #infobar {
     display: flex;
     position: relative;
     top: 50px;
 }
+
 
 /** hebergements-and-populaires section ********/
 
@@ -623,17 +634,25 @@ footer {
 
 
 
+
+
+
+
+
+
 /* Small devices (phones, less than 768px) ***************************/
 @media (max-width: 768px) {
 
 
-/***** header****/
-    header a:hover {
-        border-top: none;
-        border-bottom: solid 1px #0065FC;
-        color: #0065FC;
-    }
+    /***** main conteneur****/
+.main-container {
+    padding: 0px;
+}   
 
+
+
+
+/***** header****/
 
     .header {
         flex-direction: column;
@@ -648,21 +667,67 @@ footer {
         justify-content: center;
     }
 
+    .nav_header {
+        gap: 2px;
+    }
 
-    header a:hover {
+    .link_nav {
+        padding: 0px 15% 0px 15%;
+        border-bottom: solid 1px #F2F2F2;
+    }
+
+    .link_nav:hover {
         border-bottom: solid 1px #0065FC;
         color: #0065FC;
+        border-top: white solid 1px;
+    }
+
+    #p_under_h1 {
+        margin-bottom: 30px;
+    }
+
+ /** Search and filter section ***********/
+
+    .search_filtre h1 {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    #p_under_h1 {
+        text-align: center;
     }
 
 
 
-    /****** Research section ***********/
+    /** Research zone **/
+
+
+    .formulaire {
+        width: auto;
+        margin: auto;
+    }
+
+
+    #iconGPS {
+        padding-left: 25px;
+        margin-right: -5px;
+        padding-top: 15px;
+    }
 
     .text_research {
         margin-right: -15px;
+        width: 100%;
     }
 
-    /** hidding research button with text **/
+.button_research_icon {
+
+    padding-left: 100px;
+    padding-right: 20px;
+}
+
+
+
+    /** hidding research button containing text **/
     .button_research_text {
         display: none;
     }
@@ -682,6 +747,53 @@ footer {
     }
 
 
+    /**Filter zone***/
+
+
+    .div_filter {
+        width: auto;
+        margin: auto;
+    }
+
+    .buttons_filter {
+        flex-direction: column;
+    }
+
+    .set_of_2_buttons_filter {
+        display: flex;
+        gap: 10px;
+    }
+
+    #familial_button {
+        padding-right: 55px;
+       
+    }
+
+
+
+/**info bar**/
+
+#infobar {
+    top: 100px;
+}
+
+
+/** hebergements-and-populaires section ********/
+
+.hebergements-and-populaires {
+    padding-top: 120px;
+    flex-direction:column-reverse;
+}
+
+
+.populaires{
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.populaires-cards {
+    flex-direction: column;
+}
 
 
 }

@@ -31,11 +31,11 @@
         <!-- OPENING OF HEADER -->
         <header class="header">
             <div class="div_logo">
-            <img class="logo" src="images/logo/Booki.png" alt="logo du site">
+                <img class="logo" src="images/logo/Booki.png" alt="logo du site">
             </div>
             <nav class="nav_header">
-                <a href="#">Hébergements</a>
-                <a href="#">Activités</a>
+                <a class="link_nav" href="#">Hébergements</a>
+                <a class="link_nav" href="#">Activités</a>
             </nav>
         </header>
         <!-- END OF HEADER -->
@@ -45,10 +45,11 @@
 
         <main>
 
-            <section class="search_filtre"> <!--OPENING OF THE RESEARCH AND FILTER SECTION ************************************************  -->
+            <section class="search_filtre">
+                <!--OPENING OF THE RESEARCH AND FILTER SECTION ************************************************  -->
 
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
+                <p id="p_under_h1">En plein centre ville ou en pleine nature</p>
 
 
                 <form class="formulaire" action=""> <!-- Opening of the research zone-->
@@ -66,15 +67,22 @@
 
                 <div class="div_filter"> <!-- Opening of filter zone-->
                     <h3 id="filter_title">Filtres</h3>
-
+                
                     <div class="buttons_filter">
                         <!-- div that let the display's menagement of the buttons according size screen  -->
-                        <button class="button"> <i class="fa-solid fa-money-bill-wave"></i>Économique</button>
-                        <button class="button"> <i class="fa-solid fa-person"></i> Familial</button>
-                        <button class="button"> <i class="fa-solid fa-heart"></i> Romantique</button>
-                        <button class="button"> <i class="fa-solid fa-fire"></i> Nos pépites</button>
-                    </div>
+                
+                        <div class="set_of_2_buttons_filter" >
+                            <button class="button"> <i class="fa-solid fa-money-bill-wave"></i>Économique</button>
+                            <button class="button" id="familial_button"> <i class="fa-solid fa-person"></i> Familial</button>
+                        </div>
+                
+                        <div class="set_of_2_buttons_filter">
+                            <button class="button"> <i class="fa-solid fa-heart"></i> Romantique</button>
+                            <button class="button"> <i class="fa-solid fa-fire"></i> Nos pépites</button>
+                        </div>
 
+                    </div>
+                
                 </div> <!-- end of filter zone-->
 
 
@@ -85,7 +93,8 @@
 
 
 
-            </section> <!--END OF THE RESEARCH AND FILTER SECTION ***********************************************************************   -->
+            </section>
+            <!--END OF THE RESEARCH AND FILTER SECTION ***********************************************************************   -->
 
 
 
@@ -96,16 +105,18 @@
 
 
 
-            <div class="hebergements-and-populaires"> <!-- DIV MANEGING THE DISPLAY OF THE DEUX SECTIONS !!!!!!!!!!!!!! -->
+            <div class="hebergements-and-populaires">
+                <!-- DIV MANEGING THE DISPLAY OF THE DEUX SECTIONS !!!!!!!!!!!!!! -->
 
 
-                <section class="hebergements"> <!-- OPENING OF THE SECTION HEBERGEMENTS ************************************************** -->
+                <section class="hebergements">
+                    <!-- OPENING OF THE SECTION HEBERGEMENTS ************************************************** -->
                     <h2 class="section-title"> Hébergements à Marseille </h2>
 
-                   
 
 
-                    <div class="conteneur_flex_herbergement">   <!--  first conteneur FLEX-->
+
+                    <div class="conteneur_flex_herbergement"> <!--  first conteneur FLEX-->
 
 
                         <!-- first card -->
@@ -163,7 +174,7 @@
                             </article>
                         </a>
 
-                        
+
                         <!-- Third card -->
 
                         <a class="link_herbergements" href="#">
@@ -192,9 +203,9 @@
                             </article>
                         </a>
 
-                    </div>  <!--  End of the first conteneur FLEX-->
+                    </div> <!--  End of the first conteneur FLEX-->
 
-                    <div class="conteneur_flex_herbergement">   <!--  second conteneur FLEX-->
+                    <div class="conteneur_flex_herbergement"> <!--  second conteneur FLEX-->
 
 
                         <!-- tourth card -->
@@ -233,7 +244,7 @@
 
                                 <div class="card-content">
                                     <div class="card-txt"> <!-- Text of the card -->
-                                    <h3 class="card-title"> Auberge La Canebière</h3>
+                                        <h3 class="card-title"> Auberge La Canebière</h3>
                                         <p class="card-subtitle">Nuit à partir de 25 <span class="euro">€</span> </p>
                                     </div>
 
@@ -252,7 +263,7 @@
                             </article>
                         </a>
 
-                        
+
                         <!-- Sixth card -->
 
                         <a class="link_herbergements" href="#">
@@ -281,13 +292,14 @@
                             </article>
                         </a>
 
-                    </div>  <!--  End of the second conteneur FLEX-->
+                    </div> <!--  End of the second conteneur FLEX-->
 
-                    
+
 
                     <h3 class="lien_afficher_plus"><a href="#"> Afficher plus</a></h3>
 
-                </section> <!-- END OF THE SECTION HEBERGEMENTS ************************************************************************** -->
+                </section>
+                <!-- END OF THE SECTION HEBERGEMENTS ************************************************************************** -->
 
 
 
@@ -295,7 +307,7 @@
 
 
 
-
+            
 
 
 
@@ -334,7 +346,7 @@
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
 
-                                </div> 
+                                </div>
 
                             </article>
                         </a>
@@ -401,16 +413,18 @@
 
 
 
-            <section class="activites">  <!-- OPENING OF SECTION ACTIVITES **************************************************************** -->
+            <section class="activites">
+                <!-- OPENING OF SECTION ACTIVITES **************************************************************** -->
                 <h2 class="lieu_activites">Activités à Marseille</h2>
-            
+
                 <div class="resultats_activites">
-            
+
                     <!-- First card to activity -->
                     <a class="link_activites" href="#">
                         <article class="card">
-                            <img src="images/activites/reno-laithienne.jpg" alt="Image de bateaux dans un port de plaisance">
-            
+                            <img src="images/activites/reno-laithienne.jpg"
+                                alt="Image de bateaux dans un port de plaisance">
+
                             <div class="card-content">
                                 <div class="card-txt"> <!-- Text of the card -->
                                     <h3 class="card-title"> Vieux port</h3>
@@ -418,12 +432,12 @@
                             </div>
                         </article>
                     </a>
-            
+
                     <!-- Second card to activity -->
                     <a class="link_activites" href="#">
                         <article class="card" id="card_activite_2">
                             <img src="images/activites/paul-hermann.jpg" alt="Image d'un vieux Fort en Montagne">
-            
+
                             <div class="card-content">
                                 <div class="card-txt"> <!-- Text of the card -->
                                     <h3 class="card-title"> Fort de Pomègues</h3>
@@ -431,12 +445,12 @@
                             </div>
                         </article>
                     </a>
-            
+
                     <!-- Third card to activity -->
                     <a class="link_activites" href="#">
                         <article class="card" id="card_activite_3">
                             <img src="images/activites/kilyan-sockalingum.jpg" alt="Image d'une Calanque">
-            
+
                             <div class="card-content">
                                 <div class="card-txt"> <!-- Text of the card -->
                                     <h3 class="card-title"> Parc National des Calanques</h3>
@@ -444,12 +458,12 @@
                             </div>
                         </article>
                     </a>
-            
+
                     <!-- Fourth card to activity -->
                     <a class="link_activites" href="#">
                         <article class="card" id="card_activite_4">
                             <img src="images/activites/florian-wehde.jpg" alt="Image d'une Eglise sur une bute">
-            
+
                             <div class="card-content">
                                 <div class="card-txt"> <!-- Text of the card -->
                                     <h3 class="card-title"> Notre-Dame-De-La-Garde</h3>
@@ -457,8 +471,9 @@
                             </div>
                         </article>
                     </a>
-            
-            </section>  <!-- OPENING OF SECTION ACTIVITES **************************************************************** -->
+
+            </section>
+            <!-- ENDING OF SECTION ACTIVITES **************************************************************** -->
 
 
         </main>
@@ -472,36 +487,36 @@
 
         <!-- OPENING OF FOOTER -->
         <footer>
-<div class="div_inside_footer">
-    <h3 class="titles_in_footer">Á propos</h3>
-    <ul class="ul_div_footer">
-        <li>Fonctionnement du site</li>
-        <li>Conditions générales</li>
-        <li>Données et confidentialité</li>
+            <div class="div_inside_footer">
+                <h3 class="titles_in_footer">Á propos</h3>
+                <ul class="ul_div_footer">
+                    <li>Fonctionnement du site</li>
+                    <li>Conditions générales</li>
+                    <li>Données et confidentialité</li>
 
-    </ul>
-</div>
+                </ul>
+            </div>
 
-<div class="div_inside_footer">
-    <h3 class="titles_in_footer">Nos hébergements</h3>
-    <ul class="ul_div_footer">
-        <li>Charte qualité</li>
-        <li>Proposer votre hôtel</li>
-        
-
-    </ul>
-</div>
+            <div class="div_inside_footer">
+                <h3 class="titles_in_footer">Nos hébergements</h3>
+                <ul class="ul_div_footer">
+                    <li>Charte qualité</li>
+                    <li>Proposer votre hôtel</li>
 
 
-<div class="div_inside_footer" id="footer_div3">
-    <h3 class="titles_in_footer">Assistance</h3>
-    <ul class="ul_div_footer" >
-        <li >Centre d'aide</li>
-        <li>Nous contacter</li>
-        
+                </ul>
+            </div>
 
-    </ul>
-</div>
+
+            <div class="div_inside_footer" id="footer_div3">
+                <h3 class="titles_in_footer">Assistance</h3>
+                <ul class="ul_div_footer">
+                    <li>Centre d'aide</li>
+                    <li>Nous contacter</li>
+
+
+                </ul>
+            </div>
 
 
 
