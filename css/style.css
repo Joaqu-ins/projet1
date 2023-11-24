@@ -88,8 +88,8 @@ a {
 }
 
 .link_nav:hover {
-    border-top: solid 1px #0065FC;
-    color: #0065FC;
+    border-top: solid 1px var(--main-color);
+    color: var(--main-color);
 }
 
 
@@ -130,7 +130,7 @@ a {
     }
     
     #iconGPS {
-        background-color: #F2F2F2;
+        background-color: var(--main-bg-color);
         width: 50px;
         border-radius: 15px 0px 0px 15px;
         font-size: 20px;
@@ -148,13 +148,13 @@ a {
         width:185px;
         font-size: 18px;
         font-weight: bold;
-        border: 1px solid #F2F2F2;
+        border: 1px solid var(--main-bg-color);
         border-right: none;
     }
     
     
     .button_research_text {
-        background-color: #0065FC;
+        background-color: var(--main-color);
         border-radius: 0px 15px 15px 0px;
         color: white;
         width: 125px;
@@ -165,7 +165,7 @@ a {
     
     
     .button_research_icon {
-        background-color: #0065FC;
+        background-color: var(--main-color);
         border-radius: 0px 15px 15px 0px;
         color: white;
         width: 132px;
@@ -208,7 +208,7 @@ a {
     }
     
     .button:hover {
-    background-color: #DEEBFF;
+    background-color: var(--filter-bg-color);
     }
     
     
@@ -248,7 +248,7 @@ a {
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
+           /****** Je retire ici le bgc avec var= main bg color ***********/      
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
@@ -261,6 +261,7 @@ a {
 
 .hebergements {
     width: 65%;
+    background-color: var(--main-bg-color);
 }
 
 
@@ -319,6 +320,7 @@ margin-top: 30px;
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    background-color: var(--main-bg-color);
 }
 
 .populaires-title {
@@ -785,15 +787,71 @@ footer {
     flex-direction:column-reverse;
 }
 
+.hebergements-and-populaires section {
+    border-radius: 0px;
+} 
+
+/**herbergement zone**/
+
+.hebergements {
+    background-color: white;
+}
+
+.conteneur_flex_herbergement {
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 2%;
+}
+
+.hebergements a {
+    width: 80%;
+}
+
+.hebergements img {
+    max-height: 200px;
+    height: 100%;
+}
+
+
+.hebergements .card {
+    
+    min-height: 280px;
+}
+
+.hebergements .card-txt {
+    height: auto;
+}
+
+
+
+
+/**populaire zone**/
 
 .populaires{
     margin-top: -10px;
     margin-bottom: 30px;
+    border-radius: 0px;
+    background-color: var(--main-bg-color);
 }
 
 .populaires-cards {
     flex-direction: column;
 }
+
+.populaires-cards a {
+    width: 95%;
+    margin: auto;
+}
+
+.populaires img {
+    max-height: 200px;
+    height: 100%;
+    width: 30%;
+}
+
+
+
+
 
 
 }
