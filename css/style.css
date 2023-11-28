@@ -8,6 +8,7 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    
 }
 
 .fa-solid {
@@ -68,12 +69,6 @@ a {
 
 
 
-
-
-
-
-
-
 /****** Header *******************************************************/
 .header {
 
@@ -116,7 +111,7 @@ a {
 /****** Research and filter section *********************************************************************************************************/
 
          
-.search_filtre h1 {
+.main_title {
     margin-top: 70px;    
     margin-bottom: -5px;
     }
@@ -230,10 +225,6 @@ a {
     
     }
 /*********************************************************************************************************************************************/
-
-
-
-
 
 
 
@@ -370,22 +361,6 @@ margin-top: 30px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /****** Section activites*********************************************************************************************************************/
 
 
@@ -428,30 +403,10 @@ margin-top: 30px;
 
 
 .activites .card-title {
-padding: 0px 0px 0px 5px;
+padding: 0px 0px 0px 25px;
 }
 
-
-
-
-
-
-
-
-
-
 /*********************************************************************************************************************************************/
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -467,11 +422,18 @@ footer {
     min-height: 150px;
     margin-top: 50px;
     display: flex;
-    gap: 230px;
+    justify-content: space-between;
+
 }
 
 .div_inside_footer {
     padding-left: 20px;
+    min-width: 180px;
+}
+
+
+#footer_div2, #footer_div3 {
+    padding-right: 50px;
 }
 
 .titles_in_footer {
@@ -486,6 +448,11 @@ footer {
 .ul_div_footer li {
     padding-top: 20px;
 }
+
+
+
+
+
 
 /*********************************************************************/
 
@@ -573,9 +540,9 @@ footer {
     flex-direction: column;
 }
 
-.search_filtre h1 {
+/* .main_title {
     margin-top: 50px;
-}
+} */
 
 
 /** research zone **/
@@ -620,14 +587,9 @@ footer {
 
 /** footer ********/
 
+
 footer {
-    gap: 9%;
-}
-
-#footer_div3 {
-    padding-left: 9%;
-}
-
+gap: 10%;
 }
 
 
@@ -674,7 +636,7 @@ footer {
     }
 
     .link_nav {
-        padding: 0px 15% 0px 15%;
+        padding: 0px 20% 0px 20%;
         border-bottom: solid 1px #F2F2F2;
     }
 
@@ -688,41 +650,49 @@ footer {
         margin-bottom: 30px;
     }
 
+
+
+    
  /** Search and filter section ***********/
 
-    .search_filtre h1 {
-        margin-top: 20px;
-        text-align: center;
+    .main_title {
+        width: 60%;
+        min-width: 230px;
+        margin-left: 5%;
+        margin-top: 35px;
     }
     
     #p_under_h1 {
-        text-align: center;
+        margin-left: 5%;
     }
-
 
 
     /** Research zone **/
 
 
     .formulaire {
-        width: auto;
+        width: 90%;
         margin: auto;
     }
 
 
     #iconGPS {
-        padding-left: 25px;
-        margin-right: -5px;
+        
         padding-top: 15px;
+        padding-right: 15px;
+        padding-left: -10px;
     }
 
     .text_research {
         margin-right: -15px;
-        width: 100%;
+        width: 105%;
+        margin: auto;
+        height: 48px;
     }
 
 .button_research_icon {
 
+    margin-left: -8px;
     padding-left: 100px;
     padding-right: 20px;
 }
@@ -741,7 +711,7 @@ footer {
         border-radius: 15px 15px 15px 15px;
         padding-top: 16px;
         padding-left: 17px;
-        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
     }
 
     .button_research_icon i {
@@ -753,32 +723,41 @@ footer {
 
 
     .div_filter {
-        width: auto;
-        margin: auto;
+        width: 100%;
     }
+
+    #filter_title {
+        margin-left: 5%;
+    }
+
 
     .buttons_filter {
         flex-direction: column;
+        width: 95%;
+        margin: auto;
     }
 
     .set_of_2_buttons_filter {
         display: flex;
-        gap: 10px;
+        width: 100%;
     }
 
-    #familial_button {
-        padding-right: 55px;
+   .button {
+       padding-top: 15px;
+       padding-bottom: 15px;
+       width: 45%;
+       margin: auto;
+   }     
        
-    }
+    
 
 
 
 /**info bar**/
 
 #infobar {
-    top: 100px;
-    width: auto;
-    margin: auto;
+    padding-top: 120px;
+    margin-left: 5%;
 }
 
 
@@ -786,7 +765,7 @@ footer {
 /** hebergements-and-populaires section ********/
 
 .hebergements-and-populaires {
-    padding-top: 120px;
+    padding-top: 90px;
     flex-direction:column-reverse;
 }
 
@@ -900,15 +879,15 @@ footer {
     flex-direction: column;
 }
 
-.div_inside_footer {
-    padding-left: 8%;
-}
 
+
+#footer_div1,#footer_div2 {
+
+margin-left: 5%;
+}
+   
 #footer_div3 {
-    color: red;
-
+    margin-left: -1%;
 }
 
-
-
-}
+}}
