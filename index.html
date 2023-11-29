@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- HEAD -->
+
 
 <head>
     <meta charset="UTF-8">
@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<!-- END OF HEAD -->
+
 
 
 
@@ -34,25 +34,21 @@
                 <img class="logo" src="images/logo/Booki.png" alt="logo du site">
             </div>
             <nav class="nav_header">
-                <a class="link_nav" href="#">Hébergements</a>
-                <a class="link_nav" href="#">Activités</a>
+                <a class="link_nav" href="#hebergements">Hébergements</a>
+                <a class="link_nav" href="#activites">Activités</a>
             </nav>
         </header>
-        <!-- HEADER -->
-
 
 
 
         <main>
-
             <section class="search_filtre">
-                <!--RESEARCH AND FILTER SECTION ************************************************  -->
 
                 <h1 class="main_title">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p id="p_under_h1">En plein centre ville ou en pleine nature</p>
 
 
-                <form class="formulaire" action=""> <!-- Opening of the research zone-->
+                <form class="formulaire" action="">
 
                     <i id="iconGPS" class="fa-sharp fa-solid fa-location-dot"></i>
                     <input class="text_research" type="text" value="Marseille, France">
@@ -61,61 +57,45 @@
                     <button class="button_research_icon" name="button_research" type="submit"><i
                             class="fa-solid fa-magnifying-glass"></i></button>
 
-                </form> <!-- End of the research zone-->
+                </form>
 
 
-
-                <div class="div_filter"> <!-- Opening of filter zone-->
+                <div class="div_filter">
                     <h3 id="filter_title">Filtres</h3>
-                
+
                     <div class="buttons_filter">
                         <!-- div that let the display's menagement of the buttons according size screen  -->
-                
-                        <div class="set_of_2_buttons_filter" >
-                            <button class="button"> <i class="fa-solid fa-money-bill-wave"></i>Économique</button>
-                            <button class="button" id="familial_button"> <i class="fa-solid fa-person"></i> Familial</button>
-                        </div>
-                
-                        <div class="set_of_2_buttons_filter">
-                            <button class="button"> <i class="fa-solid fa-heart"></i> Romantique</button>
-                            <button class="button"> <i class="fa-solid fa-fire"></i> Nos pépites</button>
-                        </div>
+
+                        <button class="button"> <i class="fa-solid fa-money-bill-wave"></i>Économique</button>
+                        <button class="button" id="familial_button"> <i class="fa-solid fa-person"></i>
+                            Familial</button>
+
+                        <button class="button"> <i class="fa-solid fa-heart"></i> Romantique</button>
+                        <button class="button"> <i class="fa-solid fa-fire"></i> Nos pépites</button>
 
                     </div>
-                
-                </div> <!-- end of filter zone-->
+                </div>
 
+                <div id="infobar">
 
-                <div id="infobar"> <!-- Opening of Infobar-->
-                    <i class="fa-solid fa-circle-info"></i>
                     <p>Plus de <span>500 </span>logements sont disponibles dans cette ville</p>
-                </div> <!-- Enf of Infobar-->
+                    <i id="information" class="fa-solid fa-info"></i>
+                </div>
+
+
+
+
 
             </section>
-            <!--RESEARCH AND FILTER SECTION ***********************************************************************   -->
-
-
-
-
-
-
-
-
-
 
             <div class="hebergements-and-populaires">
-                <!-- DIV MANEGING THE DISPLAY OF THE DEUX SECTIONS !!!!!!!!!!!!!! -->
-
 
                 <section class="hebergements">
-                    <!--SECTION HEBERGEMENTS ************************************************** -->
+                    <!--SECTION MANEGING DISPLAY OFTHE CENTRAL COLUMN IN DESKTOP VERSION ************************-->
+
                     <h2 class="section-title"> Hébergements à Marseille </h2>
 
-
-
-
                     <div class="conteneur_flex_herbergement"> <!--  first conteneur FLEX-->
-
 
                         <!-- first card -->
                         <a class="link_herbergements" href="#">
@@ -124,13 +104,12 @@
                                     alt="Image de la chambre d'hôtel montrant un lit">
 
                                 <div class="card-content">
-                                    <div class="card-txt"> <!-- Text of the card -->
+                                    <div class="card-txt">
                                         <h3 class="card-title"> Hôtel du port</h3>
                                         <p class="card-subtitle">Nuit à partir de 52 <span class="euro">€</span> </p>
                                     </div>
 
-
-                                    <div class="card-rating"> <!-- Rating of the card -->
+                                    <div class="card-rating">
 
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -152,13 +131,12 @@
                                     alt="Image de la chambre d'hôtel montrant un lit">
 
                                 <div class="card-content">
-                                    <div class="card-txt"> <!-- Text of the card -->
+                                    <div class="card-txt">
                                         <h3 class="card-title"> Hôtel chez Amina</h3>
                                         <p class="card-subtitle">Nuit à partir de 96 <span class="euro">€</span> </p>
                                     </div>
 
-
-                                    <div class="card-rating"> <!-- Rating of the card -->
+                                    <div class="card-rating">
 
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -171,7 +149,6 @@
                                 </div>
                             </article>
                         </a>
-
 
                         <!-- Third card -->
 
@@ -181,13 +158,12 @@
                                     alt="Image de la chambre d'hôtel montrant un lit">
 
                                 <div class="card-content">
-                                    <div class="card-txt"> <!-- Text of the card -->
+                                    <div class="card-txt">
                                         <h3 class="card-title"> Hôtel les Mouettes</h3>
                                         <p class="card-subtitle">Nuit à partir de 76 <span class="euro">€</span> </p>
                                     </div>
 
-
-                                    <div class="card-rating"> <!-- Rating of the card -->
+                                    <div class="card-rating">
 
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -201,7 +177,7 @@
                             </article>
                         </a>
 
-                    </div> <!--  End of the first conteneur FLEX-->
+                    </div>
 
                     <div class="conteneur_flex_herbergement"> <!--  second conteneur FLEX-->
 
@@ -213,13 +189,12 @@
                                     alt="Image de la chambre d'hôtel montrant un lit">
 
                                 <div class="card-content">
-                                    <div class="card-txt"> <!-- Text of the card -->
+                                    <div class="card-txt">
                                         <h3 class="card-title"> Hôtel de la mer</h3>
                                         <p class="card-subtitle">Nuit à partir de 46 <span class="euro">€</span> </p>
                                     </div>
 
-
-                                    <div class="card-rating"> <!-- Rating of the card -->
+                                    <div class="card-rating">
 
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -241,13 +216,12 @@
                                     alt="Image de la chambre d'hôtel montrant un lit">
 
                                 <div class="card-content">
-                                    <div class="card-txt"> <!-- Text of the card -->
+                                    <div class="card-txt">
                                         <h3 class="card-title"> Auberge La Canebière</h3>
                                         <p class="card-subtitle">Nuit à partir de 25 <span class="euro">€</span> </p>
                                     </div>
 
-
-                                    <div class="card-rating"> <!-- Rating of the card -->
+                                    <div class="card-rating">
 
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -270,13 +244,12 @@
                                     alt="Image de la chambre d'hôtel montrant un lit">
 
                                 <div class="card-content">
-                                    <div class="card-txt"> <!-- Text of the card -->
+                                    <div class="card-txt">
                                         <h3 class="card-title"> Hôtel Le Panier</h3>
                                         <p class="card-subtitle">Nuit à partir de 23 <span class="euro">€</span> </p>
                                     </div>
 
-
-                                    <div class="card-rating"> <!-- Rating of the card -->
+                                    <div class="card-rating">
 
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -292,12 +265,8 @@
 
                     </div> <!--  End of the second conteneur FLEX-->
 
-
-
                     <h3 class="lien_afficher_plus"><a href="#"> Afficher plus</a></h3>
-
                 </section>
-                <!--SECTION HEBERGEMENTS ************************************************************************** -->
 
 
 
@@ -305,20 +274,19 @@
 
 
 
-            
 
 
 
-                <!--SECTION MANEGING DISPLAY OF RHE RIGHT COLUMN ***************************************************************-->
+                <!--SECTION MANEGING DISPLAY OF THE RIGHT COLUMN IN DESKTOP VERSION *******************************************************-->
                 <section class="populaires">
 
-                    <div class="populaires-title">
+                    <div class="div_populaires-title">
 
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
 
-                    <!-- selection of popular hotels -->
+
                     <div class="populaires-cards">
 
                         <!-- first link to an hotel -->
@@ -327,14 +295,12 @@
                                 <img src="./images/hebergements/emile-guillemot.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
 
-                                <!-- Maneging of the text beside image -->
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Le soleil du matin</h3>
                                         <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
                                     </div>
 
-                                    <!-- Maneging the stars under text-->
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -345,7 +311,6 @@
                                     </div>
 
                                 </div>
-
                             </article>
                         </a>
 
@@ -357,13 +322,11 @@
                                     alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
 
-                                    <!-- Maneging of the text beside image -->
                                     <div class="card-txt">
                                         <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
                                         <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
                                     </div>
 
-                                    <!-- Maneging the stars under text-->
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -384,13 +347,11 @@
                                     alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
 
-                                    <!-- Maneging of the text beside image -->
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Bleu et Blanc</h3>
                                         <p class="card-subtitle">Nuit à partir de 68<span class="euro">€</span></p>
                                     </div>
 
-                                    <!-- Maneging the stars under text-->
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -404,15 +365,19 @@
                         </a>
                     </div>
                 </section>
-                <!-- MANEGING DISPLAY OF RHE RIGHT COLUMN **************************************************************** -->
-
-
-            </div> <!-- DIV MANEGING THE DISPLAY OF THE DEUX SECTIONS !!!!!!!!!!!-->
+            </div>
 
 
 
-            <section class="activites">
-                <!--SECTION ACTIVITES **************************************************************** -->
+
+
+
+
+
+
+            <section class="activites" id="activites">
+                <!--SECTION ACTIVITES IN THE BOTTOM OF THE PAGE IN DESKTOP VERSION *************************** -->
+
                 <h2 class="lieu_activites">Activités à Marseille</h2>
 
                 <div class="resultats_activites">
@@ -424,7 +389,7 @@
                                 alt="Image de bateaux dans un port de plaisance">
 
                             <div class="card-content">
-                                <div class="card-txt"> <!-- Text of the card -->
+                                <div class="card-txt">
                                     <h3 class="card-title"> Vieux port</h3>
                                 </div>
                             </div>
@@ -437,7 +402,7 @@
                             <img src="images/activites/paul-hermann.jpg" alt="Image d'un vieux Fort en Montagne">
 
                             <div class="card-content">
-                                <div class="card-txt"> <!-- Text of the card -->
+                                <div class="card-txt">
                                     <h3 class="card-title"> Fort de Pomègues</h3>
                                 </div>
                             </div>
@@ -450,7 +415,7 @@
                             <img src="images/activites/kilyan-sockalingum.jpg" alt="Image d'une Calanque">
 
                             <div class="card-content">
-                                <div class="card-txt"> <!-- Text of the card -->
+                                <div class="card-txt">
                                     <h3 class="card-title"> Parc National des Calanques</h3>
                                 </div>
                             </div>
@@ -469,29 +434,21 @@
                             </div>
                         </article>
                     </a>
-
             </section>
-            <!--SECTION ACTIVITES **************************************************************** -->
-
-
         </main>
-
-
-
-
 
 
 
 
         <!-- FOOTER -->
         <footer>
+
             <div class="div_inside_footer" id="footer_div1">
                 <h3 class="titles_in_footer">Á propos</h3>
                 <ul class="ul_div_footer">
                     <li>Fonctionnement du site</li>
                     <li>Conditions générales</li>
                     <li>Données et confidentialité</li>
-
                 </ul>
             </div>
 
@@ -500,24 +457,16 @@
                 <ul class="ul_div_footer">
                     <li>Charte qualité</li>
                     <li>Proposer votre hôtel</li>
-
-
                 </ul>
             </div>
-
 
             <div class="div_inside_footer" id="footer_div3">
                 <h3 class="titles_in_footer">Assistance</h3>
                 <ul class="ul_div_footer">
                     <li>Centre d'aide</li>
                     <li>Nous contacter</li>
-
-
                 </ul>
             </div>
-
-
-
         </footer>
         <!-- FOOTER -->
 
