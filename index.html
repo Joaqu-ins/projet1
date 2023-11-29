@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-
     <script src="https://kit.fontawesome.com/1c02d06360.js" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -39,16 +34,15 @@
             </nav>
         </header>
 
-
-
-        <main>
+    
+        <main> <!-- MAIN -->
             <section class="search_filtre">
 
                 <h1 class="main_title">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p id="p_under_h1">En plein centre ville ou en pleine nature</p>
 
 
-                <form class="formulaire" action="">
+                <form class="search_form" action="">
 
                     <i id="iconGPS" class="fa-sharp fa-solid fa-location-dot"></i>
                     <input class="text_research" type="text" value="Marseille, France">
@@ -76,9 +70,9 @@
                     </div>
                 </div>
 
-                <div id="infobar">
+                <div class="infobar">
 
-                    <p>Plus de <span>500 </span>logements sont disponibles dans cette ville</p>
+                    <p>Plus de <span id="number_of_housing">500 </span>logements sont disponibles dans cette ville</p>
                     <i id="information" class="fa-solid fa-info"></i>
                 </div>
 
@@ -88,17 +82,17 @@
 
             </section>
 
-            <div class="hebergements-and-populaires">
+            <div class="accommodation-and-popular">
 
-                <section class="hebergements">
+                <section class="accommodation">
                     <!--SECTION MANEGING DISPLAY OFTHE CENTRAL COLUMN IN DESKTOP VERSION ************************-->
 
                     <h2 class="section-title"> Hébergements à Marseille </h2>
 
-                    <div class="conteneur_flex_herbergement"> <!--  first conteneur FLEX-->
+                    <div class="container_flex_accommodation"> <!--  first container FLEX-->
 
                         <!-- first card -->
-                        <a class="link_herbergements" href="#">
+                        <a class="link_accommodation" href="#">
                             <article class="card">
                                 <img src="images/hebergements/fred-kleber.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
@@ -125,7 +119,7 @@
 
                         <!-- second card -->
 
-                        <a class="link_herbergements" href="#">
+                        <a class="link_accommodation" href="#">
                             <article class="card">
                                 <img src="images/hebergements/febrian-zakaria.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
@@ -152,7 +146,7 @@
 
                         <!-- Third card -->
 
-                        <a class="link_herbergements" href="#">
+                        <a class="link_accommodation" href="#">
                             <article class="card">
                                 <img src="images/hebergements/reisetopia.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
@@ -179,11 +173,11 @@
 
                     </div>
 
-                    <div class="conteneur_flex_herbergement"> <!--  second conteneur FLEX-->
+                    <div class="container_flex_accommodation"> <!--  second container FLEX-->
 
 
                         <!-- tourth card -->
-                        <a class="link_herbergements" href="#">
+                        <a class="link_accommodation" href="#">
                             <article class="card">
                                 <img src="images/hebergements/annie-spratt.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
@@ -210,7 +204,7 @@
 
                         <!-- fifth card -->
 
-                        <a class="link_herbergements" href="#">
+                        <a class="link_accommodation" href="#">
                             <article class="card" id="card5">
                                 <img src="images/hebergements/marcus-loke.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
@@ -238,7 +232,7 @@
 
                         <!-- Sixth card -->
 
-                        <a class="link_herbergements" href="#">
+                        <a class="link_accommodation" href="#">
                             <article class="card" id="card6">
                                 <img src="images/hebergements/nicate-lee.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
@@ -263,9 +257,9 @@
                             </article>
                         </a>
 
-                    </div> <!--  End of the second conteneur FLEX-->
+                    </div>
 
-                    <h3 class="lien_afficher_plus"><a href="#"> Afficher plus</a></h3>
+                    <h3 class="link_afficher_plus"><a href="#"> Afficher plus</a></h3>
                 </section>
 
 
@@ -278,16 +272,16 @@
 
 
                 <!--SECTION MANEGING DISPLAY OF THE RIGHT COLUMN IN DESKTOP VERSION *******************************************************-->
-                <section class="populaires">
+                <section class="popular">
 
-                    <div class="div_populaires-title">
+                    <div class="div_popular-title">
 
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
 
 
-                    <div class="populaires-cards">
+                    <div class="popular-cards">
 
                         <!-- first link to an hotel -->
                         <a href="#">
@@ -375,15 +369,15 @@
 
 
 
-            <section class="activites" id="activites">
+            <section class="activities" id="activites">
                 <!--SECTION ACTIVITES IN THE BOTTOM OF THE PAGE IN DESKTOP VERSION *************************** -->
 
-                <h2 class="lieu_activites">Activités à Marseille</h2>
+                <h2 class="location_activities">Activités à Marseille</h2>
 
-                <div class="resultats_activites">
+                <div class="results_activities">
 
-                    <!-- First card to activity -->
-                    <a class="link_activites" href="#">
+                    <!-- First card to activities -->
+                    <a class="link_activities" href="#">
                         <article class="card">
                             <img src="images/activites/reno-laithienne.jpg"
                                 alt="Image de bateaux dans un port de plaisance">
@@ -396,9 +390,9 @@
                         </article>
                     </a>
 
-                    <!-- Second card to activity -->
-                    <a class="link_activites" href="#">
-                        <article class="card" id="card_activite_2">
+                    <!-- Second card to activities -->
+                    <a class="link_activities" href="#">
+                        <article class="card">
                             <img src="images/activites/paul-hermann.jpg" alt="Image d'un vieux Fort en Montagne">
 
                             <div class="card-content">
@@ -409,9 +403,9 @@
                         </article>
                     </a>
 
-                    <!-- Third card to activity -->
-                    <a class="link_activites" href="#">
-                        <article class="card" id="card_activite_3">
+                    <!-- Third card to activities -->
+                    <a class="link_activities" href="#">
+                        <article class="card">
                             <img src="images/activites/kilyan-sockalingum.jpg" alt="Image d'une Calanque">
 
                             <div class="card-content">
@@ -422,9 +416,9 @@
                         </article>
                     </a>
 
-                    <!-- Fourth card to activity -->
-                    <a class="link_activites" href="#">
-                        <article class="card" id="card_activite_4">
+                    <!-- Fourth card to activities -->
+                    <a class="link_activities" href="#">
+                        <article class="card">
                             <img src="images/activites/florian-wehde.jpg" alt="Image d'une Eglise sur une bute">
 
                             <div class="card-content">
