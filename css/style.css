@@ -71,12 +71,12 @@ a {
     margin-top: 20px;
 }
 
-.link_nav {
+.link-nav {
     border-top: solid 1px white;
     border-bottom: solid 1px white;
 }
 
-.link_nav:hover {
+.link-nav:hover {
     border-top: solid 1px var(--main-color);
     color: var(--main-color);
 }
@@ -89,26 +89,26 @@ a {
     top: 15px;
 }
 
-.nav_header {
+.nav-header {
     display: flex;
     gap: 4em;
 }
 
 /*** Research and filter section ***/
 
-.search_filtre {
+.search-filtre {
     height: 310px;
 }
 
 
-.main_title {
+.main-title {
     margin-top: 70px;
     margin-bottom: -5px;
 }
 
 
 /** research zone **/
-.search_form {
+.search-form {
     margin-top: 35px;
     display: flex;
     height: 52px;
@@ -127,7 +127,7 @@ a {
 }
 
 
-.text_research {
+.text-research {
     border: none;
     text-align: center;
     width: 185px;
@@ -138,7 +138,7 @@ a {
 }
 
 
-.button_research_text {
+.button-research-text {
     background-color: var(--main-color);
     border-radius: 0px 15px 15px 0px;
     color: white;
@@ -149,7 +149,7 @@ a {
 }
 
 
-.button_research_icon {
+.button-research-icon {
     background-color: var(--main-color);
     border-radius: 0px 15px 15px 0px;
     color: white;
@@ -163,7 +163,7 @@ a {
 
 /** filter zone **/
 
-.div_filter {
+.div-filter {
     display: flex;
     gap: 15px;
     padding-top: 15px;
@@ -171,13 +171,13 @@ a {
     width: 758px;
 }
 
-#filter_title {
+#filter-title {
     font-size: 18px;
     padding-top: 12px;
 
 }
 
-.buttons_filter {
+.buttons-filter {
     display: flex;
     margin-top: 16px;
     gap: 15px;
@@ -250,13 +250,13 @@ a {
     height: 620px;
 }
 
-.container_flex_accommodation {
+.container-flex-accommodation {
     display: flex;
     gap: 10%;
     margin-right: 1%;
 }
 
-.link_accommodation {
+.link-accommodation {
     width: 25%;
     margin-top: 30px;
 }
@@ -295,7 +295,7 @@ a {
     margin-top: -10px;
 }
 
-.accommodation .link_afficher_plus {
+.accommodation .link-afficher-plus {
     margin-top: 30px;
 }
 
@@ -306,7 +306,7 @@ a {
     background-color: var(--main-bg-color);
 }
 
-.div_popular-title {
+.div-popular-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -348,12 +348,12 @@ a {
 
 /**** Section activities****/
 
-.activities .location_activities {
+.activities .location-activities {
     margin-top: 60px;
     padding-left: 2.5%;
 }
 
-.results_activities {
+.results-activities {
     display: flex;
     gap: 3%;
     padding-left: 2%;
@@ -361,7 +361,7 @@ a {
     margin-top: 30px;
 }
 
-.link_activities {
+.link-activities {
     width: 25%;
 }
 
@@ -386,7 +386,7 @@ a {
 /*** Footer ***/
 
 footer {
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     margin-bottom: 0px;
     min-height: 150px;
     margin-top: 70px;
@@ -394,20 +394,20 @@ footer {
     gap: 20%;
 }
 
-#footer_div1 {
+#footer-div1 {
     margin-left: 2%;
 }
 
-.titles_in_footer {
+.titles-in-footer {
     margin-bottom: -15px;
 }
 
-.ul_div_footer {
+.ul-div-footer {
     list-style-type: none;
     padding: 0;
 }
 
-.ul_div_footer li {
+.ul-div-footer li {
     padding-top: 20px;
 }
 
@@ -453,29 +453,29 @@ footer {
 
     /** research and filter section ********/
 
-    .search_filtre {
+    .search-filtre {
         display: flex;
         flex-direction: column;
     }
 
     /** research zone **/
 
-    .search_form {
+    .search-form {
         margin-top: 10px;
         min-height: 49px;
     }
 
     /** filter zone **/
 
-    .div_filter {
+    .div-filter {
         flex-direction: column;
     }
 
-    #filter_title {
+    #filter-title {
         padding-top: 0px;
     }
 
-    .buttons_filter {
+    .buttons-filter {
         margin-top: -10px;
     }
 
@@ -581,50 +581,50 @@ footer {
             flex-direction: column;
         }
 
-        .div_logo {
+        .div-logo {
             text-align: center;
         }
 
-        .nav_header {
+        .nav-header {
             margin-top: 40Px;
             justify-content: center;
         }
 
-        .nav_header {
+        .nav-header {
             gap: 2px;
         }
 
-        .link_nav {
+        .link-nav {
             padding: 0px 20% 0px 20%;
             border-bottom: solid 1px #F2F2F2;
         }
 
-        .link_nav:hover {
-            border-bottom: solid 1px #0065FC;
-            color: #0065FC;
+        .link-nav:hover {
+            border-bottom: solid 1px var(--filter-bg-color);
+            color: var();
             border-top: white solid 1px;
         }
 
-        #p_under_h1 {
+        #p-under-h1 {
             margin-bottom: 30px;
         }
 
         /** Search and filter section ***********/
 
-        .main_title {
+        .main-title {
             width: 70%;
             min-width: 250px;
             margin-left: 5%;
             margin-top: 35px;
         }
 
-        #p_under_h1 {
+        #p-under-h1 {
             margin-left: 5%;
         }
 
         /** Research zone **/
 
-        .search_form {
+        .search-form {
             width: 90%;
             margin: auto;
         }
@@ -637,14 +637,14 @@ footer {
             height: 37px;
         }
 
-        .text_research {
+        .text-research {
             margin-right: -15px;
             width: 105%;
             margin: auto;
             height: 48px;
         }
 
-        .button_research_icon {
+        .button-research-icon {
 
             margin-left: -8px;
             padding-left: 100px;
@@ -652,12 +652,12 @@ footer {
         }
 
         /** hidding research button containing text **/
-        .button_research_text {
+        .button-research-text {
             display: none;
         }
 
         /** displaying research button with icon**/
-        .button_research_icon {
+        .button-research-icon {
             display: flex;
             width: 50px;
             border-radius: 15px 15px 15px 15px;
@@ -666,21 +666,21 @@ footer {
             box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
         }
 
-        .button_research_icon i {
+        .button-research-icon i {
             color: white;
         }
 
         /**Filter zone***/
 
-        .div_filter {
+        .div-filter {
             width: 100%;
         }
 
-        #filter_title {
+        #filter-title {
             margin-left: 5%;
         }
 
-        .buttons_filter {
+        .buttons-filter {
             flex-wrap: wrap;
             width: 95%;
             margin: auto;
@@ -727,7 +727,7 @@ footer {
             height: auto;
         }
 
-        .container_flex_accommodation {
+        .container-flex-accommodation {
             flex-direction: column;
             margin-top: 5px;
             margin-left: 2.5%;
@@ -787,7 +787,7 @@ footer {
 
         /**Activités**/
 
-        .results_activities {
+        .results-activities {
             flex-direction: column;
             gap: 25px;
             margin-left: 6.5%;
@@ -816,11 +816,11 @@ footer {
             gap: 20px;
         }
 
-        .div_inside_footer {
+        .div-inside-footer {
             margin-left: 9%;
         }
 
-        #footer_div1 {
+        #footer-div1 {
             margin-left: 9%;
         }
 
