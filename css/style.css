@@ -7,7 +7,6 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
-
 }
 
 .fa-solid {
@@ -19,12 +18,12 @@ body {
     justify-content: center;
     max-width: 1440px;
     margin: auto;
-
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -71,6 +70,11 @@ a {
     margin-top: 20px;
 }
 
+.nav-header {
+    display: flex;
+    gap: 4em;
+}
+
 .link-nav {
     border-top: solid 1px white;
     border-bottom: solid 1px white;
@@ -81,7 +85,6 @@ a {
     color: var(--main-color);
 }
 
-
 .logo {
     width: 61.09px;
     height: 19px;
@@ -89,10 +92,7 @@ a {
     top: 15px;
 }
 
-.nav-header {
-    display: flex;
-    gap: 4em;
-}
+
 
 /*** Research and filter section ***/
 
@@ -227,7 +227,7 @@ a {
 }
 
 
-/****** Hebergements And Popular *****/
+/****** Accommodation And Popular *****/
 
 .accommodation-and-popular {
     display: flex;
@@ -242,7 +242,7 @@ a {
 }
 
 
-/****** Hebergements ******/
+/****** Accommodation ******/
 
 .accommodation {
     width: 65%;
@@ -369,7 +369,6 @@ a {
     height: 100%;
     width: 100%;
     padding: 0px;
-
 }
 
 .activities img {
@@ -391,7 +390,6 @@ footer {
     min-height: 150px;
     margin-top: 70px;
     display: flex;
-    gap: 20%;
 }
 
 #footer-div1 {
@@ -411,22 +409,13 @@ footer {
     padding-top: 20px;
 }
 
+#footer-div2 {
+    margin-left: 18%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#footer-div3 {
+    margin-left: 22%;
+}
 
 
 
@@ -494,9 +483,6 @@ footer {
 
     .accommodation-and-popular {
         margin-top: 10px;
-    }
-
-    .accommodation-and-popular {
         flex-direction: column;
     }
 
@@ -545,9 +531,16 @@ footer {
 
     /** footer ********/
 
-    .footer {
-        gap: 15%;
+    #footer-div2 {
+        margin-left: 14%;
     }
+
+    #footer-div3 {
+        margin-left: 15%;
+        margin-right: 5%;
+    }
+
+
 
 
 
@@ -588,9 +581,6 @@ footer {
         .nav-header {
             margin-top: 40Px;
             justify-content: center;
-        }
-
-        .nav-header {
             gap: 2px;
         }
 
@@ -605,9 +595,6 @@ footer {
             border-top: white solid 1px;
         }
 
-        #p-under-h1 {
-            margin-bottom: 30px;
-        }
 
         /** Search and filter section ***********/
 
@@ -620,6 +607,7 @@ footer {
 
         #p-under-h1 {
             margin-left: 5%;
+            margin-bottom: 30px;
         }
 
         /** Research zone **/
@@ -717,14 +705,14 @@ footer {
 
         /**herbergement zone**/
 
-        .section-title {
-            margin-bottom: -15px;
-        }
-
         .accommodation {
             background-color: white;
             margin-top: -50px;
             height: auto;
+        }
+
+        .section-title {
+            margin-bottom: -15px;
         }
 
         .container-flex-accommodation {
@@ -743,7 +731,6 @@ footer {
             height: 100%;
             min-height: 200px;
         }
-
 
         .accommodation .card {
 
@@ -785,7 +772,7 @@ footer {
             white-space: revert;
         }
 
-        /**Activités**/
+        /**Activities**/
 
         .results-activities {
             flex-direction: column;
@@ -816,13 +803,18 @@ footer {
             gap: 20px;
         }
 
-        .div-inside-footer {
+        #footer-div1,
+        #footer-div2,
+        #footer-div3 {
             margin-left: 9%;
         }
 
-        #footer-div1 {
-            margin-left: 9%;
-        }
+
+
+
+
+
+
 
 
     }
@@ -841,6 +833,8 @@ footer {
     /**Fix problem of display between 457px and 496px**/
     @media (max-width: 496px) {
 
+        /**Filter and research section**/
+
         .infobar {
             margin-top: 155px;
         }
@@ -849,6 +843,8 @@ footer {
             position: relative;
             top: 12px;
         }
+
+        /**Popular section**/
 
         .popular {
             margin-top: 10px;
@@ -868,7 +864,9 @@ footer {
     /** Fix problem of display under 457px **/
     @media (max-width: 457px) {
 
-        #iconGPS{
+        /**Filter and research section**/
+
+        #iconGPS {
             height: 37px;
         }
 
@@ -881,11 +879,13 @@ footer {
             top: 10px;
         }
 
+        /**Popular section**/
+
         .popular {
             margin-top: 35px;
         }
     }
 
 
-    
+
 }
