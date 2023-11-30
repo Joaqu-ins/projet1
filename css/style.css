@@ -590,8 +590,7 @@ footer {
         }
 
         .link-nav:hover {
-            border-bottom: solid 1px var(--filter-bg-color);
-            color: var();
+            border-bottom: solid 1px var(--main-color);
             border-top: white solid 1px;
         }
 
@@ -618,10 +617,8 @@ footer {
         }
 
         #iconGPS {
-
             padding-top: 15px;
             padding-right: 15px;
-            padding-left: -10px;
             height: 37px;
         }
 
