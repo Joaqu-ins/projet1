@@ -14,20 +14,13 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
     max-width: 1440px;
     min-width: 320px;
+    overflow-x: hidden;
     margin: auto;
-    overflow-x: hidden; 
+    padding: 0 50px 0px 50px;
 }
 
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
 
 a {
     color: inherit;
@@ -64,7 +57,7 @@ a {
 
 
 /****** Header *****/
-.header {
+header {
 
     display: flex;
     justify-content: space-between;
@@ -251,16 +244,28 @@ a {
     height: 620px;
 }
 
+/** I choosed to set two "div container" to always display 3 cards on a line, whatever the width of the screen in desktop version. The display
+would have beeen different with only one container and the propertys "display: flex" and "flex-wrap" when the widht of the window is small (we would
+have 3 line of 2 cards)
+I also choose width in "%" and not in "px" to have same proportions of cards size as what we can see in figma modele, whatever the width of
+the window **/
+
 .container-flex-accommodation {
     display: flex;
     gap: 10%;
     margin-right: 1%;
 }
 
+/** The initial sizes of images in cards specify differents width in the displau for each card. So i set up a width of 25% for
+the "a" element to apply a same with for all cards   **/
+
 .link-accommodation {
     width: 25%;
     margin-top: 30px;
 }
+
+/** To display cards with same proportion as the model figma, i set up a higher widh than 100% (120%). Like this, the width of the cards is
+same than the one we can see in the figma model. That's why the element inspector shows a width for "a" smaller than "article width"   **/
 
 .accommodation .card {
     width: 120%;
@@ -298,6 +303,9 @@ a {
 
 .accommodation .link-afficher-plus {
     margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 1%;
 }
 
 
@@ -387,36 +395,28 @@ a {
 
 footer {
     background-color: var(--main-bg-color);
-    margin-bottom: 0px;
-    min-height: 150px;
     margin-top: 60px;
+    min-height: 180px;
     display: flex;
-}
-
-#footer-div1 {
-    margin-left: 2%;
+    gap: 20%;
+    padding: 1px 2% 1px 2%;
 }
 
 .titles-in-footer {
-    margin-bottom: -15px;
+    margin-bottom: 0;
 }
 
 .ul-div-footer {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 .ul-div-footer li {
     padding-top: 20px;
 }
 
-#footer-div2 {
-    margin-left: 18%;
-}
 
-#footer-div3 {
-    margin-left: 22%;
-}
 
 
 
@@ -532,20 +532,14 @@ footer {
 
     /** footer ********/
 
-    #footer-div2 {
-        margin-left: 14%;
+    footer {
+        gap: 16%;
     }
 
-    #footer-div3 {
-        margin-left: 15%;
-        margin-right: 5%;
+    .div-inside-footer {
+        min-width: 200px;
+        margin-right: -5%;
     }
-
-
-
-
-
-
 
 
 
@@ -565,18 +559,19 @@ footer {
 
 
         /***** main container****/
-        .main-container {
-            padding: 0px;
+        body {
+            padding: 0;
         }
 
         /***** header****/
 
-        .header {
+        header {
             flex-direction: column;
         }
 
-        .div-logo {
-            text-align: center;
+        .logo {
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .nav-header {
@@ -684,15 +679,18 @@ footer {
         /**info bar**/
 
         .infobar {
-            margin-top: 170px;
             margin-left: 5%;
             padding-right: 25px;
+            position: relative;
+            top: 30%;
         }
+
+
 
         /** accommodation-and-popular section ********/
 
         .accommodation-and-popular {
-            padding-top: 200px;
+            margin-top: 180px;
             flex-direction: column-reverse;
         }
 
@@ -748,7 +746,6 @@ footer {
         /**populaire zone**/
 
         .popular {
-            margin-top: 10px;
             margin-bottom: 60px;
             border-radius: 0px;
             background-color: var(--main-bg-color);
@@ -778,7 +775,7 @@ footer {
 
         /**Activities**/
 
-        .activities .location-activities{
+        .activities .location-activities {
             padding-left: 7%;
             margin-top: 40px;
         }
@@ -810,90 +807,16 @@ footer {
             display: flex;
             flex-direction: column;
             gap: 20px;
-        }
-
-        #footer-div1,
-        #footer-div2,
-        #footer-div3 {
-            margin-left: 9%;
-        }
-
-
-
-
-
-
-
-
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-    /**Fix problem of display between 457px and 496px**/
-    @media (max-width: 496px) {
-
-        /**Filter and research section**/
-
-        .infobar {
-            margin-top: 155px;
-        }
-
-        .infobar p {
-            position: relative;
-            top: 12px;
-        }
-
-        /**Popular section**/
-
-        .popular {
-            margin-top: 10px;
-        }
-
-    }
-
-
-
-
-
-
-
-
-
-
-    /** Fix problem of display under 457px **/
-    @media (max-width: 457px) {
-
-        /**Filter and research section**/
-
-        #iconGPS {
-            height: 37px;
-        }
-
-        .infobar {
-            margin-top: 160px;
-        }
-
-        .infobar p {
-            position: relative;
-            top: 10px;
-        }
-
-        /**Popular section**/
-
-        .popular {
-            margin-top: 35px;
+            padding-left: 9%;
+            min-height: 465px;
         }
     }
+
+
+
+
+
+
 
 
 
