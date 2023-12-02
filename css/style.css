@@ -398,7 +398,7 @@ footer {
     margin-top: 60px;
     min-height: 180px;
     display: flex;
-    gap: 20%;
+    gap: 21%;
     padding: 1px 2% 1px 2%;
 }
 
@@ -533,17 +533,17 @@ footer {
     /** footer ********/
 
     footer {
-        gap: 16%;
+        gap: 0;
+        justify-content: flex-start;
+        gap: 10%;
     }
 
     .div-inside-footer {
         min-width: 200px;
-        margin-right: -5%;
     }
 
 
-
-
+   
 
 
 
