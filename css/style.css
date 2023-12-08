@@ -216,19 +216,19 @@ header {
     color: var(--main-color);
     border: solid rgba(217, 217, 217, 1) 1.5px;
     border-radius: 50%;
-   /** code to create a circle around the icon**/
+    /** code to create a circle around the icon**/
     width: 15px;
     min-width: 15px;
-    height: 21px; 
+    height: 21px;
     min-height: 21px;
-    background-color: white; 
+    background-color: white;
     /** code to place the icon in the circle**/
     padding-left: 9.5px;
     padding-top: 3px;
     /**code to place the icon next to the "p" **/
     position: relative;
     top: 13px;
-  
+
 }
 
 
@@ -485,7 +485,7 @@ footer {
 
     .button {
         padding-bottom: 10px;
-        padding-left: 15px ;
+        padding-left: 15px;
     }
 
     /**infobar**/
@@ -620,8 +620,6 @@ footer {
             border-bottom: solid 1px #F2F2F2;
         }
 
-        
-
         .link-nav:hover {
             border-bottom: solid 1px var(--main-color);
             border-top: white solid 1px;
@@ -723,7 +721,6 @@ footer {
         }
 
 
-
         /** accommodation-and-popular section ********/
 
         .accommodation-and-popular {
@@ -748,7 +745,6 @@ footer {
             margin-bottom: -15px;
             padding-left: 2%;
         }
-
 
         .container-flex-accommodation {
             flex-direction: column;
